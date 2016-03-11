@@ -31,7 +31,7 @@ i found really beneficial to share thoughts with other coworkers who are going t
 We worked on the MVC model, we designed the database and we came up with a potential final interface.  
 Even if we are all going to build our own project with our own structure and style I think it's important to share first some ideas and collaborate before tackling the project.  
   
-### Day 2  
+#### Day 2  
 Today I didn't have enough time to start coding for I participated in an amazing series of talks about Webpack and Xamarin.iOS. Therefore, I've decided to draw a final design plan for the app.  
 Tomorrow I'm going to start coding to focus my efforts on the back-end side of the project.
   
