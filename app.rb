@@ -1,8 +1,10 @@
 require "sinatra"
-require "sinatra/contrib/all"
+require "pry-byebug"
+require "sinatra/contrib/all" if development?
 require_relative "controllers/transaction_controller"
 require_relative "controllers/merchant_controller"
 require_relative "controllers/category_controller"
+require_relative "controllers/income_controller"
 
 get "/" do
   erb :"home"

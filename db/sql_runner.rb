@@ -1,5 +1,7 @@
-class  SqlRunner
+class SqlRunner
+
   def self.run_sql(query)
+
     begin
       db = PG.connect(dbname: app_db, host: localhost)
       result = db.exec(query)
@@ -7,5 +9,7 @@ class  SqlRunner
       db.close
     end
     return result
+
   end
+  
 end
