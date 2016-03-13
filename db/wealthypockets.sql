@@ -13,12 +13,12 @@ CREATE TABLE Transactions (
 
 CREATE TABLE Merchants (
   id SERIAL8 PRIMARY KEY,
-  merchant VARCHAR(255)
+  name VARCHAR(255)
 );
 
 CREATE TABLE Categories (
   id SERIAL8 PRIMARY KEY,
-  category VARCHAR(255)
+  name VARCHAR(255)
 );
 
 CREATE TABLE Income (

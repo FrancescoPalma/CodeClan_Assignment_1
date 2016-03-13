@@ -1,7 +1,7 @@
 require "pg"
 require_relative "../db/sql_runner"
 
-class Category
+class Merchant
 
   attr_reader :name, :id
 
