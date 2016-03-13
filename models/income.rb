@@ -12,4 +12,42 @@ class Income
     @id = options['id']
   end
 
+  def save
+    sql = "INSERT INTO Income (name) VALUES (#{ @amount }, '#{ @type }', '#{ @income_date }')"
+    SqlRunner.run_sql(sql)
+    last_entry
+  end
+
+  def last_entry
+    sql = "SELECT * FROM Income ORDER BY id DESC limit 1;"
+    Income.map_item(sql)
+  end
+
+  def self.find(id)
+   sql = "SELECT * FROM Income WHERE id = #{id.to_i}"
+   result = SqlRunner.run_sql(sql)
+   income = Income.new(result[0])
+  end
+
+  def self.all
+    sql = "SELECT * FROM Income"
+    Income.map_items(sql)
+  end
+
+  def self.delete_all 
+   sql = "DELETE FROM Income"
+   SqlRunner.run_sql(sql)
+  end
+
+  def self.map_item(sql)
+    result = Income.map_items(sql)
+    result.first
+  end
+
+  def self.map_items(sql)
+    income = SqlRunner.run_sql(sql)
+    result = income.map { |i| Income.new(i) }
+    result
+  end
+
 end
