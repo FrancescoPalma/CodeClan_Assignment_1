@@ -40,7 +40,11 @@ Today I've spent most of the day working on the back-end. The tests pass, I've c
 I've decided to try building a further functionality: **Income**.  
 I want my app to display the running total of the expenses as well as the income (per month) in order to calculate a final balance. So far no real obstacles even though I am still in the process of trying to keep my focus on a 'step by step' aproach without falling into the trap of 'overthinking' or 'overengineering'.  
 One functionality at a time, it's my current motto.  
-A lesson I learnt today is that planning is important - planning _well_ is actually **fundamental** - and I like it even though at the end it's even more important to start coding, see the outcome and making the appropriate changes accordingly. 
+A lesson I learnt today is that planning is important - planning _well_ is actually **fundamental** - and I like it even though at the end it's even more important to start coding, see the outcome and making the appropriate changes accordingly.  
+#### Day 4  
+I've got most the back-end set but I've fallen in several errors. Certain routes in the 'controller' files work whereas others throw 'NoMethodErrors'.  
+I haven't had enough time to investigate enough on these errors, tomorrow in class it will be mostly a debugging day for once the errors are fixed, the last things to do are to work on the '.erb' files of the models and to find a way to display a running total of the expenses and income so that the user figures out at the end of each month whether the final balance is positive or negative.  
+Also, I'll try to have a talk with other coworkers in order to give one another some feedback and talk about any obstacles we might have found before getting back to work. I am sure it will be beneficial for all of us.
   
 (In Progress)
   
