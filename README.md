@@ -33,7 +33,14 @@ Even if we are all going to build our own project with our own structure and sty
   
 #### Day 2  
 Today I didn't have enough time to start coding for I participated in an amazing series of talks about Webpack and Xamarin.iOS. Therefore, I've decided to draw a final design plan for the app.  
-Tomorrow I'm going to start coding to focus my efforts on the back-end side of the project.
+Tomorrow I'm going to start coding to focus my efforts on the back-end side of the project.  
+  
+#### Day 3  
+Today I've spent most of the day working on the back-end. The tests pass, I've created the database and its tables, I've set up the skeleton of the app by organising folders and files and I've inserted the seed data.  
+I've decided to try building a further functionality: **Income**.  
+I want my app to display the running total of the expenses as well as the income (per month) in order to calculate a final balance. So far no real obstacles even though I am still in the process of trying to keep my focus on a 'step by step' aproach without falling into the trap of 'overthinking' or 'overengineering'.  
+One functionality at a time, it's my current motto.  
+A lesson I learnt today is that planning is important - planning _well_ is actually **fundamental** - and I like it even though at the end it's even more important to start coding, see the outcome and making the appropriate changes accordingly. 
   
 (In Progress)
   
