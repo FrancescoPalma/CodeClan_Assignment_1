@@ -28,6 +28,11 @@ class Category
    category = Category.new(result[0])
   end
 
+  def self.update(params)
+    sql = " UPDATE Categories SET name = '#{params['name']}' WHERE id = '#{params['id']}' "
+    Category.run_sql(sql)
+  end
+
   def self.all
     sql = "SELECT * FROM Categories"
     Category.map_items(sql)

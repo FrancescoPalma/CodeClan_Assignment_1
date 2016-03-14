@@ -19,8 +19,9 @@ get '/merchants/:id' do
   erb :"merchants/show"
 end
 
-get '/merchants/edit' do
+get '/merchants/:id/edit' do
   # EDIT
+  @merchant = Merchant.find(params[:id])
   erb :"merchants/edit"
 end
 
@@ -33,6 +34,8 @@ end
 
 post '/merchants/:id' do
   # UPDATE
+  @merchant = Merchant.update(params)
+  redirect to "/merchants/#{params[:id]}"
 end
 
 post '/merchants/:id/delete' do

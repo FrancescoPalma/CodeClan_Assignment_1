@@ -19,8 +19,9 @@ get '/categories/:id' do
   erb :"categories/show"
 end
 
-get '/categories/edit' do
+get '/categories/:id/edit' do
   # EDIT
+  @category = Category.find(params[:id])
   erb :"categories/edit"
 end
 
@@ -33,6 +34,8 @@ end
 
 post '/categories/:id' do
   # UPDATE
+  @category = Category.update(params)
+  redirect to "/categories/#{params[:id]}"
 end
 
 post '/categories/:id/delete' do

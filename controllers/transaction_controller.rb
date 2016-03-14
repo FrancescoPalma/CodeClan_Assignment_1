@@ -21,3 +21,21 @@ get '/transactions/new' do
   @categories = Category.all
   erb :"transactions/new"
 end
+
+get '/transactions/:id' do
+  # SHOW
+  @transaction = Transaction.find(params[:id])
+  erb :"transactions/show"
+end
+
+get '/transactions/:id/edit' do
+  # EDIT
+  @transaction = Transaction.find(params[:id])
+  erb :"transactions/edit"
+end
+
+post '/transactions/:id' do
+  # UPDATE
+  @transaction = Transaction.update(params)
+  redirect to "/transactions/#{params[:id]}"
+end

@@ -36,6 +36,22 @@ class Transaction
     SqlRunner.run_sql(sql)
   end
 
+  def self.update(params)
+    sql = " UPDATE Transactions SET 
+    amount = #{params[amount]},
+    merchant_id = '#{params['merchant_id']}',
+    category_id = '#{params['category_id']}',
+    transaction_date = '#{params['income_date']}'
+    WHERE id = '#{params['id']}' "
+    Transaction.run_sql(sql)
+  end
+
+  def self.find(id)
+   sql = "SELECT * FROM Transactions WHERE id = #{id.to_i}"
+   result = SqlRunner.run_sql(sql)
+   transaction = Transaction.new(result[0])
+  end
+
   def self.all
     sql = "SELECT * FROM Transactions"
     trans = SqlRunner.run_sql(sql)

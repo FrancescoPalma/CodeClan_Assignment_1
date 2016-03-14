@@ -17,8 +17,9 @@ get '/income/:id' do
   erb :"income/show"
 end
 
-get '/income/edit' do
+get '/income/:id/edit' do
   # EDIT
+  @income = Income.find(params[:id])
   erb :"income/edit"
 end
 
@@ -31,6 +32,8 @@ end
 
 post '/income/:id' do
   # UPDATE
+  @income = Income.update(params)
+  redirect to "/income/#{params[:id]}"
 end
 
 post '/income/:id/delete' do

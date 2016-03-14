@@ -29,6 +29,15 @@ class Income
    income = Income.new(result[0])
   end
 
+  def self.update(params)
+    sql = " UPDATE Income SET 
+    amount = #{params[amount]},
+    type = '#{params['type']}',
+    income_date = '#{params['income_date']}'
+    WHERE id = '#{params['id']}' "
+    Income.run_sql(sql)
+  end
+
   def self.all
     sql = "SELECT * FROM Income"
     Income.map_items(sql)
