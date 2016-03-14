@@ -3,12 +3,14 @@ require_relative "../db/sql_runner"
 
 class Transaction
 
-  attr_reader :amount, :transaction_date, :id
+  attr_reader :amount, :transaction_date, :id, :category_id, :merchant_id
 
   def initialize(options)
     @amount = options['amount']
     @transaction_date = options['transaction_date']
-    @id = options['id']
+    @id = nil || options['id']
+    @merchant_id = options['merchant_id'].to_i
+    @category_id = options['category_id'].to_i
   end
 
   def merchants
@@ -29,7 +31,7 @@ class Transaction
         #{ @amount },
         #{ @merchant_id }, 
         #{ @category_id },
-        #{ @transaction_date }
+        '#{ @transaction_date }'
       )"
     SqlRunner.run_sql(sql)
   end

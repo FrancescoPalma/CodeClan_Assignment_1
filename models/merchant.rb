@@ -8,7 +8,7 @@ class Merchant
 
   def initialize(options)
     @name = options['name']
-    @id = options['id']
+    @id = nil || options['id']
   end
 
   def save

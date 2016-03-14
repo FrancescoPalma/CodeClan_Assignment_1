@@ -9,11 +9,11 @@ class Income
     @amount = options['amount']
     @type = options['type']
     @income_date = options['income_date']
-    @id = options['id']
+    @id = nil || options['id']
   end
 
   def save
-    sql = "INSERT INTO Income (name) VALUES (#{ @amount }, '#{ @type }', '#{ @income_date }')"
+    sql = "INSERT INTO Income (amount, type, income_date) VALUES (#{ @amount }, '#{ @type }', '#{ @income_date }')"
     SqlRunner.run_sql(sql)
     last_entry
   end
