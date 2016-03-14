@@ -15,7 +15,6 @@ class Income
   def save
     sql = "INSERT INTO Income (amount, type, income_date) VALUES (#{ @amount }, '#{ @type }', '#{ @income_date }')"
     SqlRunner.run_sql(sql)
-    last_entry
   end
 
   def last_entry
@@ -31,11 +30,11 @@ class Income
 
   def self.update(params)
     sql = " UPDATE Income SET 
-    amount = #{params[amount]},
+    amount = #{params['amount']},
     type = '#{params['type']}',
     income_date = '#{params['income_date']}'
     WHERE id = '#{params['id']}' "
-    Income.run_sql(sql)
+    SqlRunner.run_sql(sql)
   end
 
   def self.all

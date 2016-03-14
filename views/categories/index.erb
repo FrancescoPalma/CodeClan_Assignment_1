@@ -1,0 +1,16 @@
+<h2>List of Categories</h2>
+
+<% for transaction in @transactions %>
+
+  <ul>
+    <li><% for category in @categories  %>
+    <% if category.id.to_i == transaction.category_id  %>
+    <%= category.name %>
+    <% end %>
+    <% end %></li> 
+    <li><a href="/categories/<%= category.id %>/edit">Edit Category</a></li>
+    <li><a href="/categories/new">Add new Category</a></li>
+  </ul>
+
+
+<% end %>

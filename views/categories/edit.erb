@@ -1,0 +1,14 @@
+<h2>Edit Your Category</h2>
+
+<form action="/categories/<%= @category.id %>" method="post">
+  
+  <fieldset>
+      <legend>Edit Category</legend>
+  
+      <label>Category:</label>
+      <input id="categoryInput" type="text" name="name" placeholder="e.g. Food" value="<%= @category.name %>">
+  
+      <input type="submit" value="Update Your Category">
+    </fieldset>
+
+</form>

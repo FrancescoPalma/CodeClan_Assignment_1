@@ -30,7 +30,7 @@ class Category
 
   def self.update(params)
     sql = " UPDATE Categories SET name = '#{params['name']}' WHERE id = '#{params['id']}' "
-    Category.run_sql(sql)
+    SqlRunner.run_sql(sql)
   end
 
   def self.all

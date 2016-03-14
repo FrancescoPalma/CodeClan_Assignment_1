@@ -30,7 +30,7 @@ class Merchant
 
   def self.update(params)
     sql = " UPDATE Merchants SET name = '#{params['name']}' WHERE id = '#{params['id']}' "
-    Merchant.run_sql(sql)
+    SqlRunner.run_sql(sql)
   end
 
   def self.all

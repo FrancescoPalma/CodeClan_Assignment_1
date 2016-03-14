@@ -1,0 +1,20 @@
+<h2>Edit Your Income</h2>
+
+<form action="/income/<%= @income.id %>" method="post">
+  
+  <fieldset>
+      <legend>Edit Income</legend>
+  
+      <label>Amount:</label>
+      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= @income.amount %>">
+
+      <label>Source:</label>
+      <input id="sourceInput" type="text" name="type" placeholder="e.g. Type of investment" value="<%= @income.type %>">
+
+      <label>Date:</label>
+      <input id="dateInput" type="date" name="income_date" placeholder="e.g. Date of the income" value="<%= @income.income_date %>">
+  
+      <input type="submit" value="Update Your Income">
+    </fieldset>
+
+</form>

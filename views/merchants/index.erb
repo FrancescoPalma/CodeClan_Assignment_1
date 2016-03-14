@@ -1,0 +1,16 @@
+<h2>List of Merchants</h2>
+
+<% for transaction in @transactions %>
+
+  <ul>
+    <li><% for merchant in @merchants  %>
+    <% if merchant.id.to_i == transaction.merchant_id  %>
+    <%= merchant.name %>
+    <% end %>
+    <% end %></li> 
+    <li><a href="/merchants/<%= merchant.id %>/edit">Edit Merchant</a></li>
+    <li><a href="/merchants/new">Add new Merchant</a></li>
+  </ul>
+
+
+<% end %>

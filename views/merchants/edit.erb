@@ -1,0 +1,14 @@
+<h2>Edit Your Merchant</h2>
+
+<form action="/merchants/<%= @merchant.id %>" method="post">
+  
+  <fieldset>
+      <legend>Edit Merchant</legend>
+  
+      <label>Merchant:</label>
+      <input id="merchantInput" type="text" name="name" placeholder="e.g. Tesco" value="<%= @merchant.name %>">
+  
+      <input type="submit" value="Update Your Merchant">
+    </fieldset>
+
+</form>
