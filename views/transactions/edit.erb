@@ -1,0 +1,29 @@
+<h2>Edit Your Transaction</h2>
+
+<form action="/transactions/<%= @transaction.id %>" method="post">
+  
+  <fieldset>
+      <legend>Edit Transaction</legend>
+  
+      <label>Amount:</label>
+      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= @transaction.amount %>">
+
+      <select name="merchant_id">
+      <% @merchants.each do |merchant| %>
+        <option value="<%= merchant.id %>"><%= merchant.name %></option>
+      <% end %>
+      </select>
+
+      <select name="category_id">
+      <% @categories.each do |category| %>
+        <option value="<%= category.id %>"><%= category.name %></option>
+      <% end %>
+      </select>
+
+      <label>Date:</label>
+      <input id="dateInput" type="date" name="transaction_date" placeholder="e.g. Date of the purchase" value="<%= @transaction.transaction_date %>">
+  
+      <input type="submit" value="Update Your Transaction">
+    </fieldset>
+
+</form>

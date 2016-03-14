@@ -1,0 +1,19 @@
+<ul>
+
+  <li>Amount: <%= @transaction.amount %> </li>
+
+  <li><% for merchant in @merchants  %>
+  <% if merchant.id.to_i == @transaction.merchant_id  %>
+  <%= merchant.name %>
+  <% end %>
+  <% end %></li> 
+
+  <li><% for category in @categories  %>
+  <% if category.id.to_i == @transaction.category_id  %>
+  <%= category.name %>
+  <% end %>
+  <% end %></li>
+
+  <li>Date: <%= @transaction.transaction_date %> </li>
+
+</ul>

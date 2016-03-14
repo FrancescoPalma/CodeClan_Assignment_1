@@ -5,14 +5,10 @@ require_relative "../models/transaction.rb"
 get "/transactions" do
   # INDEX
   @transaction = Transaction.new(params)
+  @transactions = Transaction.all
+  @merchants = Merchant.all
+  @categories = Category.all
   erb :"transactions/index"
-end
-
-get "/transactions" do
-  # CREATE
-  @transaction = Transaction.new(params)
-  @transaction.save
-  redirect to ("/transactions")
 end
 
 get '/transactions/new' do
@@ -24,14 +20,25 @@ end
 
 get '/transactions/:id' do
   # SHOW
+  @merchants = Merchant.all
+  @categories = Category.all
   @transaction = Transaction.find(params[:id])
   erb :"transactions/show"
 end
 
 get '/transactions/:id/edit' do
   # EDIT
+  @merchants = Merchant.all
+  @categories = Category.all
   @transaction = Transaction.find(params[:id])
   erb :"transactions/edit"
+end
+
+post "/transactions" do
+  # CREATE
+  @transaction = Transaction.new(params)
+  @transaction.save
+  redirect to ("/transactions")
 end
 
 post '/transactions/:id' do

@@ -38,16 +38,16 @@ class Transaction
 
   def self.update(params)
     sql = " UPDATE Transactions SET 
-    amount = #{params[amount]},
+    amount = '#{params['amount']}',
     merchant_id = '#{params['merchant_id']}',
     category_id = '#{params['category_id']}',
-    transaction_date = '#{params['income_date']}'
+    transaction_date = '#{params['transaction_date']}'
     WHERE id = '#{params['id']}' "
-    Transaction.run_sql(sql)
+    SqlRunner.run_sql(sql)
   end
 
   def self.find(id)
-   sql = "SELECT * FROM Transactions WHERE id = #{id.to_i}"
+   sql = "SELECT * FROM Transactions WHERE id = #{id}"
    result = SqlRunner.run_sql(sql)
    transaction = Transaction.new(result[0])
   end

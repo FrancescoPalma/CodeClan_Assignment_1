@@ -1,0 +1,27 @@
+<form action="/transactions" method="post">
+  
+  <fieldset>
+      <legend>Add Transaction</legend>
+  
+      <label>Amount:</label>
+      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100">
+
+      <select name="merchant_id">
+      <% @merchants.each do |merchant| %>
+        <option value="<%= merchant.id %>"><%= merchant.name %></option>
+      <% end %>
+      </select>
+
+      <select name="category_id">
+      <% @categories.each do |category| %>
+        <option value="<%= category.id %>"><%= category.name %></option>
+      <% end %>
+      </select>
+
+      <label>Date:</label>
+      <input id="dateInput" type="date" name="transaction_date" placeholder="e.g. Date of the purchase">
+
+      <input type="submit" value="Add Transaction">
+    </fieldset>
+
+</form>
