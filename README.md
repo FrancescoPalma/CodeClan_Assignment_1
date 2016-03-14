@@ -42,9 +42,16 @@ I want my app to display the running total of the expenses as well as the income
 One functionality at a time, it's my current motto.  
 A lesson I learnt today is that planning is important - planning _well_ is actually **fundamental** - and I like it even though at the end it's even more important to start coding, see the outcome and making the appropriate changes accordingly.  
 #### Day 4  
-I've got most the back-end set but I've fallen in several errors. Certain routes in the 'controller' files work whereas others throw 'NoMethodErrors'.  
-I haven't had enough time to investigate enough on these errors, tomorrow in class it will be mostly a debugging day for once the errors are fixed, the last things to do are to work on the '.erb' files of the models and to find a way to display a running total of the expenses and income so that the user figures out at the end of each month whether the final balance is positive or negative.  
-Also, I'll try to have a talk with other coworkers in order to give one another some feedback and talk about any obstacles we might have found before getting back to work. I am sure it will be beneficial for all of us.
+I've got most the back-end set but I've fallen in several errors. Certain routes in the 'controller' files work whereas others throw `NoMethodErrors`.  
+I haven't had enough time to investigate enough on these errors, tomorrow in class it will be mostly a debugging day for once the errors are fixed, the last things to do are to work on the `.erb` files of the models and to find a way to display a running total of the expenses and income so that the user figures out at the end of each month whether the final balance is positive or negative.  
+Also, I'll try to have a talk with other coworkers in order to give one another some feedback and talk about any obstacles we might have found before getting back to work. I am sure it will be beneficial for all of us.  
+  
+#### Day 5  
+_**The Power of the Collective**_: As I thought, exchanging feedbacks helps a lot. Especially in programming, where to spot the detail is essential and sometimes you need more eyes and more brains to cooperate.  
+So far, I've completed 50% of the MVP and I can say with absolute certainty that the app essentially **works**.  
+Tomorrow I'll focus to complete the last part of the MVP (display total expenses, total incomes, total expenses by category) and I'll do a general review to refactor the `.erb` files in `Views`.  
+Finally, I hope to allow some time to think about the front-end (i.e. CSS) to make the app looks as I want it to be.  
+Style at this point is not _fundamental_, the purpose is to practice on the back-end, but if I had some time I think it would be valuable to learn some new CSS skills to improve the style. I already had since the beginning an idea of how to organise the interface, I'll hopefully work on it between tomorrow afternoon and Day 6.
   
 (In Progress)
   
