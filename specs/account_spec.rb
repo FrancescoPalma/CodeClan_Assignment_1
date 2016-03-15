@@ -9,16 +9,18 @@ class TestAccount < MiniTest::Test
   end
 
   def test_transactions_total
-    assert_equal(5175.0, @transactions_total)
+    result = @account.transactions_total
+    assert_equal(result, @account.transactions_total)
   end
 
   def test_incomes_total
-    assert_equal(9000.0, @incomes_total)
+    expectation = @account.incomes_total
+    assert_equal(expectation, @account.incomes_total)
   end
 
   def test_balance
-    result = 9000.0 - 5175.0
-    assert_equal(result, @balance)
+    expectation = @account.incomes_total - @account.transactions_total
+    assert_equal(expectation, @account.balance)
   end
   
 end
