@@ -21,7 +21,7 @@ end
 get '/merchants/:id' do
   # SHOW
   @merchant = Merchant.find(params[:id])
-  redirect to ("/merchants")
+  erb :"merchants/show"
 end
 
 get '/merchants/:id/edit' do

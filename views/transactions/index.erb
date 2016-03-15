@@ -5,12 +5,12 @@
   <ul>
     <li>Amount: <%= transaction.amount %></li>
     <li><% for merchant in @merchants  %>
-    <% if merchant.id.to_i == transaction.merchant_id  %>
+    <% if merchant.id.to_i == transaction.merchant_id %>
     <%= merchant.name %>
     <% end %>
     <% end %></li> 
-    <li><% for category in @categories  %>
-    <% if category.id.to_i == transaction.category_id  %>
+    <li><% for category in @categories %>
+    <% if category.id.to_i == transaction.category_id %>
     <%= category.name %>
     <% end %>
     <% end %></li> 
@@ -21,3 +21,10 @@
 
 
 <% end %>
+
+<h3>Total Expenses: <% total = 0 %>
+<% @transactions.each do |transaction| %>
+<% total += transaction.amount %>
+<% end %>
+<%= total %></h3>
+

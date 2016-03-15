@@ -7,6 +7,7 @@ get "/transactions" do
   @transaction = Transaction.new(params)
   @transactions = Transaction.all
   @merchants = Merchant.all
+  @income = Income.all
   @categories = Category.all
   erb :"transactions/index"
 end

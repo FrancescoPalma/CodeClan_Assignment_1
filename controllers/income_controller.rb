@@ -3,6 +3,9 @@ require_relative "../models/income.rb"
 get "/income" do
   # INDEX
   @income = Income.all
+  @transactions = Transaction.all
+  @merchants = Merchant.all
+  @categories = Category.all
   erb :"income/index"
 end
 

@@ -6,7 +6,7 @@ class Income
   attr_reader :amount, :type, :income_date, :id
 
   def initialize(options)
-    @amount = options['amount']
+    @amount = options['amount'].to_f
     @type = options['type']
     @income_date = options['income_date']
     @id = nil || options['id']

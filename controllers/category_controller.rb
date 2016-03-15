@@ -21,7 +21,10 @@ end
 get '/categories/:id' do
   # SHOW
   @category = Category.find(params[:id])
-  redirect to ("/categories")
+  @transactions = Transaction.all
+  @merchants = Merchant.all
+  @categories = Category.all
+  erb :"categories/show"
 end
 
 get '/categories/:id/edit' do

@@ -12,3 +12,9 @@
 
 
 <% end %>
+
+<h3>Total Incomes: <% big_money = 0 %>
+<% @income.each do |i| %>
+<% big_money += i.amount %>
+<% end %>
+<%= big_money %>

@@ -6,7 +6,7 @@ class Transaction
   attr_reader :amount, :transaction_date, :id, :category_id, :merchant_id
 
   def initialize(options)
-    @amount = options['amount']
+    @amount = options['amount'].to_f
     @transaction_date = options['transaction_date']
     @id = nil || options['id']
     @merchant_id = options['merchant_id'].to_i

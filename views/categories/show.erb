@@ -1,0 +1,13 @@
+<ul>
+  <li>name: <%= @category.name %></li>
+</ul>
+
+<h3>Total Expenses by <%= @category.name %>:</h3>
+<% category_balance = 0 %>
+<% @transactions.each do |transaction| %>
+<% if transaction.category_id == @category.id %>
+<% category_balance += transaction.amount %>
+<% end %>
+<% end %>
+<%= category_balance %>
+
