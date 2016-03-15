@@ -7,5 +7,5 @@
   <% merchant_balance += transaction.amount %>
   <% end %>
   <% end %>
-  <%= merchant_balance %></li>
+  <%= sprintf "%.2f", merchant_balance %>£</li>
 </ul>

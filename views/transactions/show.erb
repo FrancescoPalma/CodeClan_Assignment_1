@@ -1,6 +1,6 @@
 <ul>
 
-  <li>Amount: <%= @transaction.amount %> </li>
+  <li>Amount: <%= sprintf "%.2f", @transaction.amount %>£</li>
 
   <li><% for merchant in @merchants  %>
   <% if merchant.id.to_i == @transaction.merchant_id  %>

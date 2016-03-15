@@ -1,13 +1,100 @@
-<h1>Wealthy Pockets®</h1>
+<section class="all-options">
 
-<a href="/transactions">Check your transactions</a>
-<a href="/transactions/new">Add a new transaction</a>
+  <div class="transactions">
+    <h1>Your Expenses</h1>
+    <br>
 
-<a href="/merchants">Check your merchants</a>
-<a href="/merchants/new">Add a new merchant</a>
+    <hr width="15%">
 
-<a href="/categories">Check your categories</a>
-<a href="/categories/new">Add a new category</a>
+    <p>You want to check your latest expenses?
+      <form action="/transactions" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
 
-<a href="/income">Check your income</a>
-<a href="/income/new">Add a new income</a>
+    <hr width="30%">
+
+    <p>Or, maybe you need to add new expenses to your list?
+      <form action="/transactions/new" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+  </div>
+
+  <div class="merchants">
+    <h1>Your Merchants</h1>
+    <br>
+
+    <hr width="15%">
+
+    <p>You want to check all the merchants from your expenses?
+      <form action="/merchants" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+
+    <hr width="30%">
+
+    <p>To add a new merchant for your future expenses
+      <form action="/merchants/new" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+  </div>
+
+  <div class="categories">
+    <h1>Your Categories</h1>
+    <br>
+
+    <hr width="15%">
+
+    <p>You want to check all the categories?
+      <form action="/categories" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+
+    <hr width="30%">
+
+    <p>To add a new category
+      <form action="/categories/new" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+  </div>
+
+  <div class="incomes">
+    <h1>Your Incomes</h1>
+    <br>
+
+    <hr width="15%">
+    
+    <p>Would you like to check your sources of income
+      <form action="/income" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+
+    <hr width="30%">
+
+    <p>To add a new income
+      <form action="/income/new" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+  </div>
+
+  <div class="balance">
+    <h1>Your Current Balance</h1>
+    <br>
+
+    <hr width="15%">
+    
+    <p>Never forget to check your current balance every time you add a new expense and/or income!
+      <form action="/account" method="get">
+        <input type="submit" value="Click Here">
+      </form>
+    </p>
+  </div>
+
+</section>

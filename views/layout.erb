@@ -2,9 +2,48 @@
 <html>
 <head>
   <title>Wealthy Pockets®</title>
-  <!-- <link rel="stylesheet" type="text/css" href="/css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
+
+<header> 
+  <nav>
+    
+    <div class="go-center">
+      <div class="logo-circle">
+        <img src="/pics/logo.png">
+        <h1>Wealthy Pockets®</h1>
+        <h3>Your Life Savings Companion</h3>
+      </div>
+    </div>
+
+    <div class="go-center">
+      <ul>
+        <li><a href="/transactions">Transactions</a></li>
+        <li><a href="/transactions/new">Add New</a></li>
+        |
+        <li><a href="/merchants">Merchants</a></li>
+        <li><a href="/merchants/new">Add New</a></li>
+        |
+        <li><a href="/categories">Categories</a></li>
+        <li><a href="/categories/new">Add New</a></li>
+        |
+        <li><a href="/income">Incomes</a></li>
+        <li><a href="/income/new">Add New</a></li>
+        |
+        <li><a href="/account">Balance</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
 <%= yield %>
+
+<footer>
+  <p>2016 - © All Rights Reserved - WealthyPockets®, Ltd. - Designed & Developed by <a href="http://intermundi.it/francesco/">Francesco Palma</a> - Logo made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+  </p>
+</footer>
+
 </body>
 </html>
