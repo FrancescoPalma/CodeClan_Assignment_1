@@ -41,4 +41,6 @@ end
 
 post '/income/:id/delete' do
   # DELETE
+  Income.delete(params[:id])
+  redirect to '/income'
 end

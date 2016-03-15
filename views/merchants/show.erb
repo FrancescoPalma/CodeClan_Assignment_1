@@ -1,3 +1,11 @@
 <ul>
   <li>name: <%= @merchant.name %></li>
+  <li>Total Expenses by <%= @merchant.name %>:
+  <% merchant_balance = 0 %>
+  <% @transactions.each do |transaction| %>
+  <% if transaction.category_id == @merchant.id.to_i %>
+  <% merchant_balance += transaction.amount %>
+  <% end %>
+  <% end %>
+  <%= merchant_balance %></li>
 </ul>

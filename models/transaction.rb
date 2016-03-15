@@ -64,4 +64,9 @@ class Transaction
     SqlRunner.run_sql(sql)
   end
 
+  def self.delete(id)
+    sql = "DELETE FROM Transactions WHERE id = #{id.to_i}"
+    SqlRunner.run_sql(sql)
+  end
+
 end

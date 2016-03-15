@@ -47,3 +47,9 @@ post '/transactions/:id' do
   @transaction = Transaction.update(params)
   redirect to "/transactions/#{params[:id]}"
 end
+
+post '/transactions/:id/delete' do 
+  # DELETE
+  Transaction.delete(params[:id])
+  redirect to '/transactions'
+end

@@ -58,4 +58,9 @@ class Income
     result
   end
 
+  def self.delete(id)
+    sql = "DELETE FROM Income WHERE id = #{id.to_i}"
+    SqlRunner.run_sql(sql)
+  end
+
 end

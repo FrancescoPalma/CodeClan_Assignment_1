@@ -16,15 +16,12 @@
     <% end %></li> 
     <li>Date: <%= transaction.transaction_date %></li>
     <li><a href="/transactions/<%= transaction.id %>/edit">Edit Transaction</a></li>
+    <form action="/transactions/<%= transaction.id %>/delete" method="post">
+      <input type="submit" value="Delete Transaction">
+    </form>
     <li><a href="/transactions/new">Add new Transaction</a></li>
   </ul>
 
 
 <% end %>
-
-<h3>Total Expenses: <% total = 0 %>
-<% @transactions.each do |transaction| %>
-<% total += transaction.amount %>
-<% end %>
-<%= total %></h3>
 

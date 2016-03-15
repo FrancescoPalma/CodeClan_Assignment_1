@@ -21,6 +21,8 @@ end
 get '/merchants/:id' do
   # SHOW
   @merchant = Merchant.find(params[:id])
+  @transactions = Transaction.all
+  @categories = Category.all
   erb :"merchants/show"
 end
 
