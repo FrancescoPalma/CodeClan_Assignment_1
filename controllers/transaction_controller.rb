@@ -21,6 +21,7 @@ end
 
 get '/transactions/:id' do
   # SHOW
+  @transactions = Transaction.all
   @merchants = Merchant.all
   @categories = Category.all
   @transaction = Transaction.find(params[:id])

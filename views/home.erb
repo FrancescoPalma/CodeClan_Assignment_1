@@ -1,10 +1,8 @@
-<section class="all-options">
+<main class="wrapper">
 
-  <div class="transactions">
+  <div class="home">
     <h1>Your Expenses</h1>
     <br>
-
-    <hr width="15%">
 
     <p>You want to check your latest expenses?
       <form action="/transactions" method="get">
@@ -12,7 +10,7 @@
       </form>
     </p>
 
-    <hr width="30%">
+    <br>
 
     <p>Or, maybe you need to add new expenses to your list?
       <form action="/transactions/new" method="get">
@@ -21,11 +19,9 @@
     </p>
   </div>
 
-  <div class="merchants">
+  <div class="home">
     <h1>Your Merchants</h1>
     <br>
-
-    <hr width="15%">
 
     <p>You want to check all the merchants from your expenses?
       <form action="/merchants" method="get">
@@ -33,7 +29,7 @@
       </form>
     </p>
 
-    <hr width="30%">
+    <br>
 
     <p>To add a new merchant for your future expenses
       <form action="/merchants/new" method="get">
@@ -42,11 +38,9 @@
     </p>
   </div>
 
-  <div class="categories">
+  <div class="home">
     <h1>Your Categories</h1>
     <br>
-
-    <hr width="15%">
 
     <p>You want to check all the categories?
       <form action="/categories" method="get">
@@ -54,7 +48,7 @@
       </form>
     </p>
 
-    <hr width="30%">
+    <br>
 
     <p>To add a new category
       <form action="/categories/new" method="get">
@@ -63,11 +57,9 @@
     </p>
   </div>
 
-  <div class="incomes">
+  <div class="home">
     <h1>Your Incomes</h1>
     <br>
-
-    <hr width="15%">
     
     <p>Would you like to check your sources of income
       <form action="/income" method="get">
@@ -75,7 +67,7 @@
       </form>
     </p>
 
-    <hr width="30%">
+    <br>
 
     <p>To add a new income
       <form action="/income/new" method="get">
@@ -84,17 +76,15 @@
     </p>
   </div>
 
-  <div class="balance">
+  <div class="home">
     <h1>Your Current Balance</h1>
     <br>
 
-    <hr width="15%">
-    
-    <p>Never forget to check your current balance every time you add a new expense and/or income!
+    <p><b>Never</b> forget to check your current balance!
       <form action="/account" method="get">
         <input type="submit" value="Click Here">
       </form>
     </p>
   </div>
 
-</section>
+</main>

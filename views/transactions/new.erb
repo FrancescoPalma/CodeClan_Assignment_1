@@ -1,27 +1,45 @@
-<form action="/transactions" method="post">
-  
-  <fieldset>
-      <legend>Add Transaction</legend>
-  
-      <label>Amount:</label>
-      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100">
+<div class="index-show">
 
-      <select name="merchant_id">
-      <% @merchants.each do |merchant| %>
-        <option value="<%= merchant.id %>"><%= merchant.name %></option>
-      <% end %>
-      </select>
+    <h1>Add Your New Expense</h1>
 
-      <select name="category_id">
-      <% @categories.each do |category| %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% end %>
-      </select>
+        <ul class="break">
+            <li>
+                <form action="/transactions" method="post">
 
-      <label>Date:</label>
-      <input id="dateInput" type="date" name="transaction_date" placeholder="e.g. Date of the purchase">
+                <label></label>
+                <input id="amountInput" type="text" name="amount" placeholder="e.g. 100">
 
-      <input type="submit" value="Add Transaction">
-    </fieldset>
+                <br>
+                <br>
+                
+                <select name="merchant_id" class="own-width">
+                <% @merchants.each do |merchant| %>
+                  <option value="<%= merchant.id %>"><%= merchant.name %></option>
+                <% end %>
+                </select>
 
-</form>
+                <br>
+                <br>
+
+                <select name="category_id" class="own-width">
+                <% @categories.each do |category| %>
+                  <option value="<%= category.id %>"><%= category.name %></option>
+                <% end %>
+                </select>
+
+                <br>
+                <br>
+
+                <label></label>
+                <input id="dateInput" type="date" name="transaction_date" placeholder="e.g. yyyy-mm-dd">
+
+                <br>
+                <br>
+                
+                <input type="submit" value="Add">
+
+                </form>
+            </li>
+        </ul>
+
+</div>

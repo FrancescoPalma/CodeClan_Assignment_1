@@ -1,27 +1,47 @@
-<h2>List of Transactions</h2>
+<div class="index">
 
-<% for transaction in @transactions %>
+    <h1>Your Expenses</h1>
 
-  <ul>
-    <li>Amount: <%= sprintf "%.2f", transaction.amount %>£</li>
-    <li><% for merchant in @merchants  %>
-    <% if merchant.id.to_i == transaction.merchant_id %>
-    <%= merchant.name %>
-    <% end %>
-    <% end %></li> 
-    <li><% for category in @categories %>
-    <% if category.id.to_i == transaction.category_id %>
-    <%= category.name %>
-    <% end %>
-    <% end %></li> 
-    <li>Date: <%= transaction.transaction_date %></li>
-    <li><a href="/transactions/<%= transaction.id %>/edit">Edit Transaction</a></li>
-    <form action="/transactions/<%= transaction.id %>/delete" method="post">
-      <input type="submit" value="Delete Transaction">
+    <form action="/transactions/new" method="get">
+        <input type="submit" value="ADD NEW">
     </form>
-    <li><a href="/transactions/new">Add new Transaction</a></li>
-  </ul>
 
+    <% for transaction in @transactions %>
+        <ul>
+            <li>
+                <%= sprintf "%.2f", transaction.amount %>£
+                
+                <br>
 
-<% end %>
+                <% for merchant in @merchants %>
+                <% if merchant.id.to_i == transaction.merchant_id %>
+                <%= merchant.name %>
+                <% end %>
+                <% end %> 
 
+                <br>
+
+                <% for category in @categories %>
+                <% if category.id.to_i == transaction.category_id %>
+                <%= category.name %>
+                <% end %>
+                <% end %> 
+
+                <br>
+
+                <%= transaction.transaction_date %>
+
+                <br>
+                <br>
+
+                <form action="/transactions/<%= transaction.id %>/edit" method="get">
+                    <input type="submit" value="Edit">
+                </form>
+
+                <form action="/transactions/<%= transaction.id %>/delete" method="post">
+                    <input type="submit" value="Delete">
+                </form>
+            </li>
+        </ul>
+    <% end %>
+</div>

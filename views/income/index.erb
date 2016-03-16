@@ -1,17 +1,35 @@
-<h2>List of Incomes</h2>
+<div class="index">
 
-<% for income in @income %>
+    <h1>Your Incomes</h1>
 
-  <ul>
-    <li>Amount: <%= sprintf "%.2f", income.amount %>£</li>
-    <li>Source: <%= income.type %></li>
-    <li>Date: <%= income.income_date %></li>
-    <li><a href="/income/<%= income.id %>/edit">Edit Income</a></li>
-    <form action="/income/<%= income.id %>/delete" method="post">
-      <input type="submit" value="Delete Income">
+    <form action="/income/new" method="get">
+        <input type="submit" value="ADD NEW">
     </form>
-    <li><a href="/income/new">Add new Income</a></li>
-  </ul>
 
+    <% for income in @income %>
+        <ul>
+            <li>
+                <%= sprintf "%.2f", income.amount %>£
 
-<% end %>
+                <br>
+
+                <%= income.type %>
+
+                <br>
+
+                <%= income.income_date %>
+                
+                <br>
+                <br>
+
+                <form action="/income/<%= income.id %>/edit" method="get">
+                    <input type="submit" value="Edit">
+                </form>
+
+                <form action="/income/<%= income.id %>/delete" method="post">
+                    <input type="submit" value="Delete">
+                </form>
+            </li>
+        </ul>
+    <% end %>
+</div>

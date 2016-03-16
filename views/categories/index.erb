@@ -1,16 +1,31 @@
-<h2>List of Categories</h2>
+<div class="index">
 
-<% for transaction in @transactions %>
+    <h1>Your Categories</h1>
 
-  <ul>
-    <li><% for category in @categories  %>
-    <% if category.id.to_i == transaction.category_id  %>
-    <%= category.name %>
+    <form action="/categories/new" method="get">
+        <input type="submit" value="ADD NEW">
+    </form>
+
+    <% for transaction in @transactions %>
+        <ul>
+            <li>
+                <br>
+                <br>
+                <br>
+
+                <% for category in @categories  %>
+                <% if category.id.to_i == transaction.category_id  %>
+                <%= category.name %>
+                <% end %>
+                <% end %>
+
+                <br>
+                <br>
+
+                <form action="/categories/<%= category.id %>/edit" method="get">
+                    <input type="submit" value="Edit">
+                </form>
+            </li>
+        </ul>
     <% end %>
-    <% end %></li> 
-    <li><a href="/categories/<%= category.id %>/edit">Edit Category</a></li>
-    <li><a href="/categories/new">Add new Category</a></li>
-  </ul>
-
-
-<% end %>
+</div>

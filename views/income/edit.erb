@@ -1,20 +1,33 @@
-<h2>Edit Your Income</h2>
+<div class="index-show">
 
-<form action="/income/<%= @income.id %>" method="post">
-  
-  <fieldset>
-      <legend>Edit Income</legend>
-  
-      <label>Amount:</label>
-      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= sprintf "%.2f", @income.amount %>">
+    <h1>Edit Your Income</h1>
 
-      <label>Source:</label>
-      <input id="sourceInput" type="text" name="type" placeholder="e.g. Type of investment" value="<%= @income.type %>">
+        <ul class="break">
+            <li>
+                <form action="/income/<%= @income.id %>" method="post">
 
-      <label>Date:</label>
-      <input id="dateInput" type="date" name="income_date" placeholder="e.g. Date of the income" value="<%= @income.income_date %>">
-  
-      <input type="submit" value="Update Your Income">
-    </fieldset>
+                <label></label>
+                <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= @income.amount %>">
 
-</form>
+                <br>
+                <br>
+                
+                <label></label>
+                <input id="sourceInput" type="text" name="type" placeholder="e.g. Type of investment" value="<%= @income.type %>">
+
+                <br>
+                <br>
+
+                <label></label>
+                <input id="dateInput" type="date" name="income_date" placeholder="e.g. Date of the income" value="<%= @income.income_date %>">
+
+                <br>
+                <br>
+                
+                <input type="submit" value="Update">
+
+                </form>
+            </li>
+        </ul>
+
+</div>

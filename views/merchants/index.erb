@@ -1,16 +1,31 @@
-<h2>List of Merchants</h2>
+<div class="index">
 
-<% for transaction in @transactions %>
+    <h1>Your Merchants</h1>
 
-  <ul>
-    <li><% for merchant in @merchants  %>
-    <% if merchant.id.to_i == transaction.merchant_id  %>
-    <%= merchant.name %>
+    <form action="/merchants/new" method="get">
+        <input type="submit" value="ADD NEW">
+    </form>
+
+    <% for transaction in @transactions %>
+        <ul>
+            <li>
+                <br>
+                <br>
+                <br>
+
+                <% for merchant in @merchants %>
+                <% if merchant.id.to_i == transaction.merchant_id %>
+                <%= merchant.name %>
+                <% end %>
+                <% end %> 
+
+                <br>
+                <br>
+
+                <form action="/merchants/<%= merchant.id %>/edit" method="get">
+                    <input type="submit" value="Edit">
+                </form>
+            </li>
+        </ul>
     <% end %>
-    <% end %></li> 
-    <li><a href="/merchants/<%= merchant.id %>/edit">Edit Merchant</a></li>
-    <li><a href="/merchants/new">Add new Merchant</a></li>
-  </ul>
-
-
-<% end %>
+</div>

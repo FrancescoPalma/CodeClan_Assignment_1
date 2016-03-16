@@ -1,14 +1,24 @@
-<h2>Edit Your Merchant</h2>
+<div class="index-show">
 
-<form action="/merchants/<%= @merchant.id %>" method="post">
-  
-  <fieldset>
-      <legend>Edit Merchant</legend>
-  
-      <label>Merchant:</label>
-      <input id="merchantInput" type="text" name="name" placeholder="e.g. Tesco" value="<%= @merchant.name %>">
-  
-      <input type="submit" value="Update Your Merchant">
-    </fieldset>
+    <h1>Edit Your Merchant</h1>
 
-</form>
+        <ul class="break">
+            <li>
+                <form action="/merchants/<%= @merchant.id %>" method="post">
+
+                <br>
+                <br>
+
+                <label></label>
+                <input id="merchantInput" type="text" name="name" placeholder="e.g. Tesco" value="<%= @merchant.name %>">
+
+                <br>
+                <br>
+                
+                <input type="submit" value="Update">
+
+                </form>
+            </li>
+        </ul>
+
+</div>

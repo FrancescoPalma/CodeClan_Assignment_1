@@ -1,5 +1,30 @@
-<ul>
-  <li>Amount: <%= sprintf "%.2f", @income.amount %>£</li>
-  <li>Source: <%= @income.type %></li>
-  <li>Date: <%= @income.income_date %></li>
-</ul>
+<div class="index-show">
+
+    <h1>Your Income</h1>
+
+    <form action="/income" method="get">
+        <input type="submit" value="Back">
+    </form>
+
+        <ul>
+            <li>
+
+                <br>
+                <br>
+                <br>
+
+                <%= sprintf "%.2f", @income.amount %>£
+                
+                <br>
+                <br>
+
+                <%= @income.type %>
+
+                <br>
+                <br>
+
+                <%= @income.income_date %>
+            </li>
+        </ul>
+
+</div>

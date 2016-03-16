@@ -1,7 +1,32 @@
-<h1>Your Account</h1>
+<div class="index-show">
 
-<h3>Transactions total: <%= sprintf "%.2f", @account.transactions_total %>£</h3>
+    <h1>Your Current Balance</h1>
 
-<h3>Incomes total: <%= sprintf "%.2f", @account.incomes_total %>£</h3>
+    <form action="/" method="get">
+        <input type="submit" value="Back to Home">
+    </form>
 
-<h3>Your Final Balance: <%= sprintf "%.2f", @account.balance %>£</h3>
+        <ul>
+            <li>
+                <br>
+                <br>
+
+
+                Expenses Total: <%= sprintf "%.2f", @account.transactions_total %>£
+
+                <br>
+                <br>
+
+                Incomes Total: <%= sprintf "%.2f", @account.incomes_total %>£
+
+                <br>
+                <br>
+
+                Current Balance: <%= sprintf "%.2f", @account.balance %>£
+
+                <br>
+                <br>
+            </li>
+        </ul>
+
+</div>
