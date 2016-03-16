@@ -51,7 +51,11 @@ _**The Power of the Collective**_: As I thought, exchanging feedbacks helps a lo
 So far, I've completed 50% of the MVP and I can say with absolute certainty that the app essentially **works**.  
 Tomorrow I'll focus to complete the last part of the MVP (display total expenses, total incomes, total expenses by category) and I'll do a general review to refactor the `.erb` files in `Views`.  
 Finally, I hope to allow some time to think about the front-end (i.e. CSS) to make the app looks as I want it to be.  
-Style at this point is not _fundamental_, the purpose is to practice on the back-end, but if I had some time I think it would be valuable to learn some new CSS skills to improve the style. I already had since the beginning an idea of how to organise the interface, I'll hopefully work on it between tomorrow afternoon and Day 6.
+Style at this point is not _fundamental_, the purpose is to practice on the back-end, but if I had some time I think it would be valuable to learn some new CSS skills to improve the style. I already had since the beginning an idea of how to organise the interface, I'll hopefully work on it between tomorrow afternoon and Day 6.  
+  
+#### Day 6  
+Today's been a long day and the time I am writing this is a witness (i.e. 01,30am). Actually, I almost forgot how much stuff I've done today. As far as I remember, I have really **completed** the back-end and the app works fine in all of its functionalities, so I'll just review in general the code before _deployment_.  
+Until now I have refactored the `.erb` files in `Views`, the HTML and I've done some CSS to add a basic mobile responsiveness functionality to the web app. Tomorr... Actually, later on today I will get to work on the **front-end**, I've got stored some real nice ideas. No hints though, I am not a fan of spoilers. Tomorrow You will see with my final update of this file :)
   
 (In Progress)
   
