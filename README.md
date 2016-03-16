@@ -55,7 +55,7 @@ Style at this point is not _fundamental_, the purpose is to practice on the back
   
 #### Day 6  
 Today's been a long day and the time I am writing this is a witness (i.e. 01,30am). Actually, I almost forgot how much stuff I've done today. As far as I remember, I have really **completed** the back-end and the app works fine in all of its functionalities, so I'll just review in general the code before _deployment_.  
-Until now I have refactored the `.erb` files in `Views`, the HTML and I've done some CSS to add a basic mobile responsiveness functionality to the web app. Tomorr... Actually, later on today I will get to work on the **front-end**, I've got stored some real nice ideas. No hints though, I am not a fan of spoilers. Tomorrow You will see with my final update of this file :)
+Until now I have refactored the `.erb` files in `Views`, the HTML and I've done some CSS to add a basic mobile responsiveness functionality to the web app. Tomorr... Actually, later on today I will get to work on the **front-end**, I've got stored some real nice ideas. No hints though, I am not a fan of spoilers. Tomorrow - this time I really _mean_ tomorrow - You will see with my final update of this file :)
   
 (In Progress)
   
