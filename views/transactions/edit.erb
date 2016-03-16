@@ -6,7 +6,7 @@
       <legend>Edit Transaction</legend>
   
       <label>Amount:</label>
-      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= @transaction.amount %>">
+      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= sprintf "%.2f", @transaction.amount %>">
 
       <select name="merchant_id">
       <% @merchants.each do |merchant| %>

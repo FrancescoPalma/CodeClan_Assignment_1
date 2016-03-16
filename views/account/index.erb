@@ -1,7 +1,7 @@
 <h1>Your Account</h1>
 
-<h3>Transactions total: <%= @account.transactions_total %></h3>
+<h3>Transactions total: <%= sprintf "%.2f", @account.transactions_total %>£</h3>
 
-<h3>Incomes total: <%= @account.incomes_total %></h3>
+<h3>Incomes total: <%= sprintf "%.2f", @account.incomes_total %>£</h3>
 
-<h3>Your Final Balance: <%= @account.balance %></h3>
+<h3>Your Final Balance: <%= sprintf "%.2f", @account.balance %>£</h3>

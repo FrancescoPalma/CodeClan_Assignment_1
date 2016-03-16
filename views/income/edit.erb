@@ -6,7 +6,7 @@
       <legend>Edit Income</legend>
   
       <label>Amount:</label>
-      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= @income.amount %>">
+      <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= sprintf "%.2f", @income.amount %>">
 
       <label>Source:</label>
       <input id="sourceInput" type="text" name="type" placeholder="e.g. Type of investment" value="<%= @income.type %>">

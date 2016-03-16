@@ -3,7 +3,7 @@
 <% for income in @income %>
 
   <ul>
-    <li>Amount: <%= income.amount %></li>
+    <li>Amount: <%= sprintf "%.2f", income.amount %>£</li>
     <li>Source: <%= income.type %></li>
     <li>Date: <%= income.income_date %></li>
     <li><a href="/income/<%= income.id %>/edit">Edit Income</a></li>
