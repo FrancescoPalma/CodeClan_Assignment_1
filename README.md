@@ -73,8 +73,36 @@ What comes after this is a sort of technical description of the app, you're welc
 I hope you enjoyed your reading and thank you for your valuable time.  
   
 Rasen_San  
-Edinburgh, 16th March 2016
+Edinburgh, 16th March 2016  
   
+## A technical description of the app  
+  
+**Back-End Functionalities:**  
+  
+- Display all the expenses, merchants, categories, incomes
+- Display the current balance (i.e. incomes running total - expenses running total)
+- Display the total amount by category and by merchant
+- Display specific expenses, merchants, categories, incomes
+- Edit specific expenses, merchants, categories, incomes
+- Add new expense, merchant, category, income
+- TDD on `models` (account, transaction, income, merchant, category)
+- Seeds data
+- PostGreSQL database with 4 tables (Transactions, Merchants, Categories, Incomes)
+- Transactions table is a Joined Table with references to the `id` of Merchants and Categories as `Foreign Keys`
+- The app has been built following the principles of REST with the Ruby webframework Sinatra and using MVC  
+
+**Front-End Stack:**  
+  
+- The `views` files have been built with plain HTML and EmbeddedRuby (i.e. `erb`)
+- Plain CSS for the style, no frameworks used, no JavaScript or jQuery
+- The app is **100% mobile responsive* using only `@media queries` for Responsive Web Design  
+  
+**Issues to be solved/implemented before Heroku deployment:**  
+  
+- Find a way to let `transactions/new.erb` and `income/new.erb` add new `amounts` with decimals (i.e. Floats) without rounding the float inserted  
+- Same issue for `transactions/edit.erb`(allows only Integers) and `income/edit.erb`(allows Floats, but returns them rounded)  
+- Same issue when displaying running total by category and by merchant in `merchants/show.erb` and `categories/show.erb`
+
 (In Progress)
   
 2016 © Francesco Palma - This project is registered under the [MIT License](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/License)
