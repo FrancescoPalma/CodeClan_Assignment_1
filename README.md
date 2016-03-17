@@ -101,7 +101,8 @@ Edinburgh, 16th March 2016
   
 - Find a way to let `transactions/new.erb` and `income/new.erb` add new `amounts` with decimals (i.e. Floats) without rounding the float inserted  
 - Same issue for `transactions/edit.erb`(allows only Integers) and `income/edit.erb`(allows Floats, but returns them rounded)  
-- Same issue when displaying running total by category and by merchant in `merchants/show.erb` and `categories/show.erb`
+- Same issue when displaying running total by category and by merchant in `merchants/show.erb` and `categories/show.erb`  
+- Solve `(PG::ForeignKeyViolation)` Error in `db/seeds.rb`
 
 (In Progress)
   
