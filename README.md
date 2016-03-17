@@ -95,7 +95,7 @@ Edinburgh, 16th March 2016
   
 - The `views` files have been built with plain HTML and EmbeddedRuby (i.e. `erb`)
 - Plain CSS for the style, no frameworks used, no JavaScript or jQuery
-- The app is **100% mobile responsive* using only `@media queries` for Responsive Web Design  
+- The app is **100% mobile responsive** using only `@media queries` for Responsive Web Design  
   
 **Issues to be solved/implemented before Heroku deployment:**  
   
