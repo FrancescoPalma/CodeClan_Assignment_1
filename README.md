@@ -20,8 +20,9 @@ I have chosen the **second project** (i.e. MoneyCashBoard) for I have a real int
   
 ## My App Journal | Your App Guide  
 I am a Software Developer in training and this is my very first solo project at CodeClan.  
-Therefore, I've decided to post here a daily journal with the purpose to give the reader of this repository a complete comprehension of how this project is being built from scratch, from planning to deployment.  
-For such reasons, this is a journal to me but an optional further guide to you as a reader.  
+Therefore, I've decided to post here a daily journal with the purpose to give the reader an enjoyable time.  
+For such reasons, this is a journal to me but an optional further guide to you as a reader, especially if you're a beginner or a trainee like me who wonders what is it like to create an app.  
+On my Github, **Curiosity** is a **Value**.
   
 ![alt text](http://cdn-media-2.lifehack.org/wp-content/files/2015/07/Learning-Quotes-16-of-16.jpg)  
   
@@ -55,8 +56,54 @@ Style at this point is not _fundamental_, the purpose is to practice on the back
   
 #### Day 6  
 Today's been a long day and the time I am writing this is a witness (i.e. 01,30am). Actually, I almost forgot how much stuff I've done today. As far as I remember, I have really **completed** the back-end and the app works fine in all of its functionalities, so I'll just review in general the code before _deployment_.  
-Until now I have refactored the `.erb` files in `Views`, the HTML and I've done some CSS to add a basic mobile responsiveness functionality to the web app. Tomorr... Actually, later on today I will get to work on the **front-end**, I've got stored some real nice ideas. No hints though, I am not a fan of spoilers. Tomorrow - this time I really **mean** tomorrow - You will see with my final update of this file :)
+Until now I have refactored the `.erb` files in `Views`, the HTML and I've done some CSS to add a basic mobile responsiveness functionality to the web app. Tomorr... Actually, later on today I will get to work on the **front-end**, I've got stored some real nice ideas. No hints though, I am not a fan of spoilers.  
   
+#### Day 7
+Today's been another quite long day, it's been the funniest day and this project week has been one of the happiest in my life. Tomorrow we will all present shortly our web app.  
+I am really proud of my app because this is my very first full stack web app, a small, automated and efficient software.  
+This reminds me why I chose to become a Software Engineer, the **joy of creation** and the excitement of facing new challenges.  
+This app has been a test. Before deciding to move to Scotland I wondered if I had the right skills to be a programmer, but after this assignment I feel more confident than ever. I faced this project with the right aptitude and I am truly happy of the process and the result.  
+From Monday I will gather with an old friend of mine, **JavaScript**. Our paths already crossed when I had been initiated to programming. It's been the **first** programming language I learnt.  
+My personal journey with **Ruby** will be then interrupted, but not terminated. I fell in love with this lovely language - the true **zen of coding** - and I can't wait to work with **Rails** in the future.  
+I perceive Ruby and JavaScript like those people you become friends with when you're a child, you may not keep in touch forever but you will **never** forget them. So, as always, I look forward to _learning new things_.  
+  
+Dear Reader/User/Friend,  
+This is my last journal update regarding this assignment.  
+What comes after this is a sort of technical description of the app, you're welcome to continue your reading if you wish.  
+I hope you enjoyed your reading and thank you for your valuable time.  
+  
+Rasen_San  
+Edinburgh, 16th March 2016  
+  
+## A technical description of the app  
+  
+**Back-End Functionalities:**  
+  
+- Display all the expenses, merchants, categories, incomes
+- Display the current balance (i.e. incomes running total - expenses running total)
+- Display the total amount by category and by merchant
+- Display specific expenses, merchants, categories, incomes
+- Edit specific expenses, merchants, categories, incomes
+- Add new expense, merchant, category, income
+- TDD on `models` (account, transaction, income, merchant, category)
+- Seeds data
+- PostGreSQL database with 4 tables (Transactions, Merchants, Categories, Incomes)
+- Transactions table is a Joined Table with references to the `id` of Merchants and Categories as `Foreign Keys`
+- The app has been built following the principles of REST with the Ruby webframework Sinatra and using MVC  
+
+**Front-End Stack:**  
+  
+- The `views` files have been built with plain HTML and EmbeddedRuby (i.e. `erb`)
+- Plain CSS for the style, no frameworks used, no JavaScript or jQuery
+- The app is **100% mobile responsive** using only `@media queries` for Responsive Web Design  
+  
+**Issues to be solved/implemented before Heroku deployment:**  
+  
+- Find a way to let `transactions/new.erb` and `income/new.erb` add new `amounts` with decimals (i.e. Floats) without rounding the float inserted  
+- Same issue for `transactions/edit.erb`(allows only Integers) and `income/edit.erb`(allows Floats, but returns them rounded)  
+- Same issue when displaying running total by category and by merchant in `merchants/show.erb` and `categories/show.erb`  
+- Solve `(PG::ForeignKeyViolation)` Error in `db/seeds.rb`
+
 (In Progress)
   
 2016 © Francesco Palma - This project is registered under the [MIT License](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/License)
