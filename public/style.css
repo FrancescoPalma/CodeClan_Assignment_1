@@ -50,9 +50,15 @@ html { font-size:100%; }
     }
 }
 
-/*Responsive br*/
+/*Responsive line breaks*/
 @media screen and (max-width: 768px){
     .break br { display: none; }
+}
+
+/*Wrap body inside a responsive box*/
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /*General Settings and NavBar*/
@@ -194,9 +200,9 @@ footer a {
   margin-top: 1.5em;
   position: relative;
   -webkit-animation-name: div; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
   animation-name: div;
-  animation-duration: 8s;
+  animation-duration: 10s;
   animation-iteration-count: 1;
   box-shadow: 
       0 5px 10px rgba(0,0,0, 0.12),
@@ -406,7 +412,7 @@ form {
   25%  {background-color: #a0a0a0;}
   50%  {background-color: gray;}
   75% {background-color: #505050;}
-  75% {background-color: #dcdcdc;}
+  100% {background-color: #dcdcdc;}
 }
 
 /*Dropdowns width*/
