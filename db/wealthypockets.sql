@@ -15,14 +15,14 @@ CREATE TABLE Categories (
 
 CREATE TABLE Income (
   id SERIAL8 PRIMARY KEY,
-  amount INT8,
+  amount FLOAT8,
   type VARCHAR(255),
   income_date date
 );
 
 CREATE TABLE Transactions (
   id SERIAL8 PRIMARY KEY,
-  amount INT8,
+  amount FLOAT8,
   merchant_id INT8 REFERENCES merchants(id),
   category_id INT8 REFERENCES categories(id),
   transaction_date date

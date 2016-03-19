@@ -6,8 +6,6 @@
             <li>
                 <form action="/transactions/<%= @transaction.id %>" method="post">
 
-                <p>(Add an Integer, e.g. 1000)</p>
-
                 <label></label>
                 <input id="amountInput" type="text" name="amount" placeholder="e.g. 100" value="<%= sprintf "%.2f", @transaction.amount %>">
 
