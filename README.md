@@ -99,10 +99,9 @@ Edinburgh, 16th March 2016
   
 **Implementations before Heroku deployment:**  
   
-- Turn `INT` into decimals inside the Database 
-- Sort Expenses by date
-- Add JSON route  
+- Turn `INT` into `FLOAT` inside the Database  
+- General refactoring/implementation of the codebase
 - Implement Responsiveness in CSS
-- Implement overall CSS (maybe with [BEM](https://css-tricks.com/bem-101/))
+- Implement overall CSS architecture (maybe with [BEM](https://css-tricks.com/bem-101/))
 
 2016 © Francesco Palma - This project is registered under the [MIT License](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/License)
