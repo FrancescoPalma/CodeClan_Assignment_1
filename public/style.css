@@ -397,7 +397,7 @@ form {
     25%  {background-color: #a0a0a0;}
     50%  {background-color: gray;}
     75% {background-color: #505050;}
-    75% {background-color: #dcdcdc;}
+    100% {background-color: #dcdcdc;}
 }
 
 /* Chrome, Safari, Opera */
