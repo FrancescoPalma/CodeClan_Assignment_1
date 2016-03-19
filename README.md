@@ -99,8 +99,8 @@ Edinburgh, 16th March 2016
   
 **Implementations before Heroku deployment:**  
   
-- Turn `INT` into `FLOAT` inside the Database  
-- General refactoring/implementation of the codebase
+- Turn `INT` into `FLOAT` inside the Database **√**
+- General refactoring/implementation of the codebase **√**
 - Implement Responsiveness in CSS
 - Implement overall CSS architecture (maybe with [BEM](https://css-tricks.com/bem-101/))
 
