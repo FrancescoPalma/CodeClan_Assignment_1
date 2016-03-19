@@ -20,7 +20,7 @@ I have chosen the **second project** (i.e. MoneyCashBoard) for I have a real int
   
 ## My App Journal | Your App Guide  
 I am a Software Developer in training and this is my very first solo project at CodeClan.  
-Therefore, I've decided to post here a daily journal with the purpose to give the reader an enjoyable time.  
+Therefore, I've decided to post here a daily journal with the purpose to give the reader an enjoyable time to spend on this Repo.  
 For such reasons, this is a journal to me but an optional further guide to you as a reader, especially if you're a beginner or a trainee like me who wonders what is it like to create an app.  
 On my Github, **Curiosity** is a **Value**.
   
@@ -70,7 +70,7 @@ I perceive Ruby and JavaScript like those people you become friends with when yo
 Dear Reader/User/Friend,  
 This is my last journal update regarding this assignment.  
 What comes after this is a sort of technical description of the app, you're welcome to continue your reading if you wish.  
-I hope you enjoyed your reading and thank you for your valuable time.  
+I hope you enjoyed it and thank you for your valuable time.  
   
 Rasen_San  
 Edinburgh, 16th March 2016  
@@ -95,15 +95,13 @@ Edinburgh, 16th March 2016
   
 - The `views` files have been built with plain HTML and EmbeddedRuby (i.e. `erb`)
 - Plain CSS for the style, no frameworks used, no JavaScript or jQuery
-- The app is **100% mobile responsive** using only `@media queries` for Responsive Web Design  
+- The app is **100% mobile responsive** using `@media queries` for Responsive Web Design  
   
-**Issues to be solved/implemented before Heroku deployment:**  
+**Implementations before Heroku deployment:**  
   
-- Find a way to let `transactions/new.erb` and `income/new.erb` add new `amounts` with decimals (i.e. Floats) without rounding the float inserted  
-- Same issue for `transactions/edit.erb`(allows only Integers) and `income/edit.erb`(allows Floats, but returns them rounded)  
-- Same issue when displaying running total by category and by merchant in `merchants/show.erb` and `categories/show.erb`  
-- Solve `(PG::ForeignKeyViolation)` Error in `db/seeds.rb`
+- Turn `INT` into `FLOAT` inside the Database  
+- General refactoring/implementation of the codebase
+- Implement Responsiveness in CSS
+- Implement overall CSS architecture (maybe with [BEM](https://css-tricks.com/bem-101/))
 
-(In Progress)
-  
 2016 © Francesco Palma - This project is registered under the [MIT License](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/License)
