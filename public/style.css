@@ -55,12 +55,6 @@ html { font-size:100%; }
     .break br { display: none; }
 }
 
-/*Wrap body inside a responsive box*/
-* {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
 /*General Settings and NavBar*/
 body {
   margin: 0; 
@@ -319,7 +313,7 @@ form {
 
 .index-show ul {
   display: block;
-  margin-bottom:45px;
+  margin-bottom:65px;
 }
 
 .index-show ul li {
