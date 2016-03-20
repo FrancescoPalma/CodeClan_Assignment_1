@@ -1,4 +1,3 @@
-require 'rubygems'
 require "sinatra"
 require "pry-byebug"
 require "sinatra/contrib/all" if development?
