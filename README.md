@@ -101,7 +101,12 @@ Edinburgh, 16th March 2016
   
 - Turn `INT` into `FLOAT` inside the Database **√**
 - General refactoring/implementation of the codebase **√**
-- Implement Responsiveness in CSS
-- Implement overall CSS architecture (maybe with [BEM](https://css-tricks.com/bem-101/))
+- ~~Implement Responsiveness in CSS~~
+- ~~Implement overall CSS architecture (maybe with [BEM](https://css-tricks.com/bem-101/))~~  
+  
+After spending a weekend on reading about responsive design with CSS and [BEM](https://css-tricks.com/bem-101/)) (which is **fantastic**) I understand how can just plain CSS become so complex and full of options for Front-End Development.  
+I can see the value in choosing or even creating an architectural style for my own CSS before thinking of the interface, its design and its code. I've then decided to do not dive into any further implementation of this app (at the moment).  
+The responsiveness performs quite well and I am proud of the final result, I will certainly take some time to practice and implement it for the next Project. Same goes for the overall content structure and style.  
+Ready to Launch! :rocket:
 
 2016 © Francesco Palma - This project is registered under the [MIT License](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/License)
