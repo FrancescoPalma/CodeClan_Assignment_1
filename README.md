@@ -3,7 +3,7 @@ This is the first Solo Project for CodeClan, Cohort3.
 The purpose of this project is to consolidate what we've been learning during our first month and possibly expanding it with further features.  
 Finally, we will present our final product explaining our code what we've learned in the process, our obstacles, etc.  
 We have to choose [_**one**_ among the following ideas](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/projects.md) and build a web application according to the specs of the related project.  
-I have chosen the **second project** (i.e. MoneyCashBoard) for I have a real interest in applying technology to finance, especially financial inclusion and financial education. Therefore, I want to start practicing on building apps on this topic.  
+I have chosen the **second project** (i.e. MoneyCashBoard) for I have a real interest in applying technology to finance, especially **financial inclusion** and **financial education**. Therefore, I want to start practicing on building apps on this topic.  
 
 **Time:** From Thursday 11/03/16 to Thursday 18/03/16  
 **Concepts to be applied:** Ruby, TDD, OOP, Web Programming(MVC, REST), Relational Databases with CRUD actions  
