@@ -193,11 +193,6 @@ footer a {
   background-color: #ebebeb;
   margin-top: 1.5em;
   position: relative;
-  -webkit-animation-name: div; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
-  animation-name: div;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
   box-shadow: 
       0 5px 10px rgba(0,0,0, 0.12),
       0 5px 10px rgba(0,0,0, 0.24);
@@ -388,26 +383,6 @@ form {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
  }
-
-/*HomePage divs animations*/
-
-/* Standard syntax */
-@keyframes div {
-    0%   {background-color: white;}
-    25%  {background-color: #a0a0a0;}
-    50%  {background-color: gray;}
-    75% {background-color: #505050;}
-    100% {background-color: #dcdcdc;}
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes div {
-  0%   {background-color: white;}
-  25%  {background-color: #a0a0a0;}
-  50%  {background-color: gray;}
-  75% {background-color: #505050;}
-  100% {background-color: #dcdcdc;}
-}
 
 /*Dropdowns width*/
 .index-show .own-width {
