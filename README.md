@@ -107,6 +107,6 @@ Edinburgh, 16th March 2016
 After spending a weekend on reading about responsive design with CSS and [BEM](https://css-tricks.com/bem-101/)) (which is **fantastic**) I understand how can just plain CSS become so complex and full of options for Front-End Development.  
 I can see the value in choosing or even creating an architectural style for my own CSS before thinking of the interface, its design and its code. I've then decided to do not dive into any further implementation of this app (at the moment).  
 The responsiveness performs quite well and I am proud of the final result, I will certainly take some time to practice and implement it for the next Project. Same goes for the overall content structure and style.  
-I have a few Back-End functionalities to work on in the future, at this point I am ready to deploy the app though.
+Ready to Launch! :rocket:
 
 2016 © Francesco Palma - This project is registered under the [MIT License](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/License)
