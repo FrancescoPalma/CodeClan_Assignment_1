@@ -97,7 +97,7 @@ Edinburgh, 16th March 2016
 - Plain CSS for the style, no frameworks used, no JavaScript or jQuery
 - The app is **100% mobile responsive** using `@media queries` for Responsive Web Design  
   
-**Implementations before Heroku deployment:**  
+**Implementations before deployment:**  
   
 - Turn `INT` into `FLOAT` inside the Database **√**
 - General refactoring/implementation of the codebase **√**
