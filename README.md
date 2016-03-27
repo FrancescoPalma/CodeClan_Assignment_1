@@ -110,6 +110,6 @@ The responsiveness performs quite well and I am proud of the final result, I wil
   
 ## Ready to Launch! :rocket:  
 The App is now ready on [Heroku!](https://wealthypockets.herokuapp.com/)  
-Thank you [Scott](https://github.com/scott-ad-riley) for your help on fixing the issue with thee Database connection.
+Thank you [Scott](https://github.com/scott-ad-riley) for your help on fixing the issue with the Database connection.
 
 2016 © Francesco Palma - This project is registered under the [MIT License](https://github.com/FrancescoPalma/CodeClan_Assignment_1/blob/master/License)
