@@ -24,8 +24,6 @@ Therefore, I've decided to post here a daily journal with the purpose to give th
 For such reasons, this is a journal to me but an optional further guide to you as a reader, especially if you're a beginner or a trainee like me who wonders what is it like to create an app.  
 On my Github, **Curiosity** is a **Value**.
   
-![alt text](http://cdn-media-2.lifehack.org/wp-content/files/2015/07/Learning-Quotes-16-of-16.jpg)  
-  
 #### Day 1  
 Today I've been working on the planning of the app writing notes and using the white board.  
 i found really beneficial to share thoughts with other coworkers who are going to build the same app.  
