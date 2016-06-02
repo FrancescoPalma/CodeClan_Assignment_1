@@ -27,8 +27,9 @@ On my Github, **Curiosity** is a **Value**.
 #### Day 1  
 Today I've been working on the planning of the app writing notes and using the white board.  
 i found really beneficial to share thoughts with other coworkers who are going to build the same app.  
-We worked on the MVC model, we designed the database and we came up with a potential final interface.  
-Even if we are all going to build our own project with our own structure and style I think it's important to share first some ideas and collaborate before tackling the project.  
+We worked on the MVC model and we designed the database by using the witheboard.  
+We understood that the priority was to start from the Back-End, the Database design, the server and testing the logic of our application and only at the end to focus on the interface by implementing the CSS part of the code.
+As a result of this collaboration we all then decided to start working on our own to implement our personal plans and diagrams of the application.  
   
 #### Day 2  
 Today I didn't have enough time to start coding for I participated in an amazing series of talks about Webpack and Xamarin.iOS. Therefore, I've decided to draw a final design plan for the app.  
