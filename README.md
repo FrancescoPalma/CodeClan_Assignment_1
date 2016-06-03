@@ -18,6 +18,11 @@ I have chosen the **second project** (i.e. MoneyCashBoard) for I have a real int
 - CRUD actions for the transactions  
 - Create a route that sends down Account data as JSON  
   
+**Implementation Constraints Form:**  
+- Platform: Developed using Sinatra as Web Framework for the application logic written in Ruby, the Terminal to carry out tests, deal with the server and the database  
+- Performance and Usability: The app shall be deployed online to Heroku as part of the coding Portfolio, so that any user can try the app on a laptop, a desktop computer, tablet and/or smartphone. There are no specific performance requirements
+- Storage: All data input by the users shall be stored in the database (PostGreSQL)
+  
 ## My App Journal | Your App Guide  
 I am a Software Developer in training and this is my very first solo project at CodeClan.  
 Therefore, I've decided to post here a daily journal with the purpose to give the reader an enjoyable time to spend on this Repo.  
